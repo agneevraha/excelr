@@ -18,7 +18,7 @@ st.dataframe(df)
 
 
 
-from textblob import TextBlob
+import TextBlob
 import pandas as pd
 import streamlit as st
 
