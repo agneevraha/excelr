@@ -1,11 +1,12 @@
 pandas
 numpy
 streamlit
-TextBlob
 textblob
+TextBlob
 plotly.graph_objects
 plotly.figure_factory
 matplotlib.pyplot
 seaborn
 wordcloud
 WordCloud
+from textblob import TextBlob
