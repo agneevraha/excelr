@@ -1,0 +1,11 @@
+pandas
+numpy
+streamlit
+TextBlob
+textblob
+plotly.graph_objects
+plotly.figure_factory
+matplotlib.pyplot
+seaborn
+wordcloud
+WordCloud
