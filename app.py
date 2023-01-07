@@ -8,11 +8,11 @@ Created on Thu Jan  5 17:54:08 2023
 import streamlit as st
 import pandas as pd
 import numpy as np
-import plotly.graph_objects as go
+#import plotly.graph_objects as go
 #np.random.randn
 st.title('NLP')
 st.header('Text Analysis: AMAZON REVIEW DATA ')
-df=pd.read_csv(r"C:\Users\hp\Downloads\_newfile (2).csv")
+df=pd.read_csv(r"_newfile (2).csv")
 st.subheader('DATA POST EDA')
 st.dataframe(df)
 
