@@ -1,0 +1,9 @@
+1)Open and run app.py to check the Streamlit App for the Project
+2)Open and run pro.py to check the Streamlit App for the Project
+3)Read the _newfile(2) in the df of the code 
+4)_newfile(2) is the processed file after Model Building
+5)You can also enter the Product_details.csv file directly into the CSV Analyze to download the Sentiment Scores of all the reviews associated with their respective producttypes
+6)Product_details.csv file is the given for Analysis
+7)You can use the checker to check the availability of the Product and its Review Text no matter how many Indexes.
+8)Then Paste the Review Text in the below Analysis text box to get the Sentiment Score
+9)
