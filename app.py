@@ -8,7 +8,7 @@ Created on Thu Jan  5 17:54:08 2023
 import streamlit as st
 import pandas as pd
 import numpy as np
-import plotly.graph_objects as go
+#import plotly.graph_objects as go
 #np.random.randn
 st.title('NLP')
 st.header('Text Analysis: AMAZON REVIEW DATA ')
