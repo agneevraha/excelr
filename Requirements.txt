@@ -10,3 +10,4 @@ seaborn
 wordcloud
 WordCloud
 from textblob import TextBlob
+pip install -U textblob
