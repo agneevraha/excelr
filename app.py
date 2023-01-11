@@ -146,7 +146,11 @@ with st.expander('Analyze CSV'):
          st.subheader('MAXIMUM VALUES')
          g6=df4['Analysis'].value_counts()
          st.write(g6)
-
+         
+         st.subheader('PRODUCT CROSS SENTIMENT ANALYSIS')
+         g7=pd.crosstab(df4.Sentiments,df4.Product_Type)
+         st.write(g7)
+        
 from textblob import TextBlob
 import pandas as pd
 import streamlit as st
