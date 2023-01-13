@@ -1,13 +1,10 @@
 pandas
 numpy
-streamlit
+regex
+scikit-learn
+sklearn
+nltk
+spacy
 textblob
-TextBlob
-plotly.graph_objects
-plotly.figure_factory
-matplotlib.pyplot
-seaborn
-wordcloud
-WordCloud
-from textblob import TextBlob
-pip install -U textblob
+contractions
+streamlit
