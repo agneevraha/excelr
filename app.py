@@ -12,7 +12,8 @@ import numpy as np
 #np.random.randn
 st.title('NLP')
 st.header('Text Analysis: AMAZON REVIEW DATA ')
-df=pd.read_csv(r"_newfile (2).csv")
+file='https://github.com/agneevraha/excelr/blob/main/_newfile%20(2).csv?raw=true'
+df=pd.read_csv(file)
 st.subheader('DATA POST EDA')
 st.dataframe(df)
 
