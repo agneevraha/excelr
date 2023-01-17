@@ -5,6 +5,7 @@ Created on Thu Jan  5 17:54:08 2023
 @author: hp
 """
 
+from textblob import TextBlob
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -19,7 +20,6 @@ st.dataframe(df)
 
 
 
-from textblob import TextBlob
 import pandas as pd
 import streamlit as st
 import matplotlib.pyplot as plt
