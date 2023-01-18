@@ -10,3 +10,4 @@ contractions
 streamlit
 matplotlib
 plotly.figure_factory
+plotly
