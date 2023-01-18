@@ -68,6 +68,7 @@ with st.expander('Analyze CSV'):
          df4['Score']=df4["Product_Description"].apply(score)
          df4['Analysis']=df4['Score'].apply(analyze)
          df4['Sentiments']=df4['Score'].apply(analyzee)
+         st.write(df4)
          df4['Products'] = df4["Product_Description"].astype(str) +"-"+ df4["Product_Type"].astype(str)
          st.write(df4.head())
          st.write(df4.tail())
