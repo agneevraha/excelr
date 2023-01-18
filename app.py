@@ -68,7 +68,7 @@ with st.expander('Analyze CSV'):
          df4['Score']=df4["Product_Description"].apply(score)
          df4['Analysis']=df4['Score'].apply(analyze)
          df4['Sentiments']=df4['Score'].apply(analyzee)
-        # df4['Products'] = df4["Product_Description"].astype(str) +"-"+ df4["Product_Type"].astype(str)
+         df4['Products'] = df4["Product_Description"].astype(str) +"-"+ df4["Product_Type"].astype(str)
          st.write(df4.head())
          st.write(df4.tail())
          st.write(df4.head(100))
@@ -91,21 +91,21 @@ with st.expander('Analyze CSV'):
              )
              
 
-         #st.write(df4['Products'])
+         st.write(df4['Products'])
 
          text2=st.text_input('Checker: if Texts and ProductType is availabale in the Product_Details.csv: ') 
          st.write('The - is the divison between Reviews and the Reviewed ProductType')
-         #sx=df4['Products']
+         sx=df4['Products']
          
          def score(x):
              blob1 = TextBlob(x)
              return blob1.sentiment.polarity
          
-         #for i in sx:
-          #   while text2 == i :
-           #      d=i
-            #     st.write(d)
-             #    break
+         for i in sx:
+             while text2 == i :
+                 d=i
+                 st.write(d)
+                 break
          text4=st.text_input('Enter your Reviews text here to Predict SENTIMENT of the Review: ')
          if text4:
              blob6 = TextBlob(text4)
