@@ -272,7 +272,7 @@ st.set_option('deprecation.showPyplotGlobalUse', False)
 import streamlit as st
 import pandas as pd
 import numpy as np
-import plotly.figure_factory as ff
+#import plotly.figure_factory as ff
 import matplotlib.pyplot as plt
 df1 = pd.DataFrame(df, columns = ['neg'])
 df1.hist()
