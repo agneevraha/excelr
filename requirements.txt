@@ -10,3 +10,4 @@ contractions
 streamlit
 matplotlib
 plotly
+seaborn
