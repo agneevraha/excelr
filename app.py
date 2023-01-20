@@ -35,7 +35,7 @@ with st.expander('Analyze Text'):
         st.write('Subjectivity: ', round(blob.sentiment.subjectivity,2))
 
 with st.expander('Analyze Text1'):
-    text1=st.text_input('Enter any Text here to check SUBJECTIVITY AND POLARITY: ')
+    text1=st.text_input('Enter any Text1 here to check SUBJECTIVITY AND POLARITY: ')
     if text1:
         blob03 = TextBlob(text1)
         
@@ -43,7 +43,7 @@ with st.expander('Analyze Text1'):
         st.write('Subjectivity: ', round(blob03.sentiment.subjectivity,2))
 
 with st.expander('Analyze Text2'):
-    text2=st.text_input('Enter any Text here to check SUBJECTIVITY AND POLARITY: ')
+    text2=st.text_input('Enter any Text2 here to check SUBJECTIVITY AND POLARITY: ')
     if text2:
         blob02 = TextBlob(text2)
         
@@ -51,7 +51,7 @@ with st.expander('Analyze Text2'):
         st.write('Subjectivity: ', round(blob02.sentiment.subjectivity,2))
 
 with st.expander('Analyze Text3'):
-    text3=st.text_input('Enter any Text here to check SUBJECTIVITY AND POLARITY: ')
+    text3=st.text_input('Enter any Text3 here to check SUBJECTIVITY AND POLARITY: ')
     if text3:
         blob01 = TextBlob(text3)
         
@@ -59,7 +59,7 @@ with st.expander('Analyze Text3'):
         st.write('Subjectivity: ', round(blob01.sentiment.subjectivity,2))
         
 with st.expander('Analyze Text4'):
-    text4=st.text_input('Enter any Text here to check SUBJECTIVITY AND POLARITY: ')
+    text4=st.text_input('Enter any Text4 here to check SUBJECTIVITY AND POLARITY: ')
     if text4:
         blob00 = TextBlob(text4)
         
