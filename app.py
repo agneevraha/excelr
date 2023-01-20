@@ -79,7 +79,7 @@ with st.expander('Analyze CSV'):
     def subjanalyzee(z1):
         if z1 > 0.6:
            return 0
-        elif z1 < 0.6 and z > 0.4:
+        elif z1 < 0.6 and z1 > 0.4:
             return 1
         elif z1 < 0.4:
             return 2
