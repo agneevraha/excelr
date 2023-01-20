@@ -74,6 +74,17 @@ with st.expander('Analyze CSV'):
             return 1
         elif z <= -0.5:
             return 0
+        
+     
+    def subjanalyzee(z1):
+        if z1 > 0.6:
+           return 0
+        elif z1 < 0.6 and z > 0.4:
+            return 1
+        elif z1 < 0.4:
+            return 2
+        elif z1 <= 0.2:
+            return 3
 
     if upl:
          df4 = pd.read_csv(upl, engine='python', encoding = 'unicode_escape') 
@@ -83,6 +94,7 @@ with st.expander('Analyze CSV'):
          df4['Sentiments']=df4['Score'].apply(analyzee)
          df4['Subjectivity']=df4["Product_Description"].apply(subj)
          df4['SubjAnalysis']=df4["Subjectivity"].apply(subjanalyze)
+         df4['SubjAnalysisScore']=df4["Subjectivity"].apply(subjanalyzee)   
          st.write(df4)
          df4['Products'] = df4["Product_Description"].astype(str)   #+"-"+
          st.write(df4.head())
@@ -181,6 +193,13 @@ with st.expander('Analyze CSV'):
          g7=pd.crosstab(df4.Sentiments,df4.Product_Type)
          st.write(g7)
          g7.hist()
+         plt.show()
+         st.pyplot()
+        
+         header('PRODUCT CROSS SUBJECTIVITY ANALYSIS')
+         g12=pd.crosstab(df4.SubjAnalysisScore,df4.Product_Type)
+         st.write(g12)
+         g12.hist()
          plt.show()
          st.pyplot()
          
