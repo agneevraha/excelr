@@ -44,6 +44,10 @@ with st.expander('Analyze CSV'):
         blob1 = TextBlob(x)
         return blob1.sentiment.polarity
     
+    def subj(x1):
+        blob0 = TextBlob(x1)
+        return blob0.sentiment.subjectivity
+    
     def analyze(y):
         if y >= 0.5:
            return 'Positive'
@@ -51,6 +55,15 @@ with st.expander('Analyze CSV'):
             return 'Negative'
         else:
             return 'Neutral'
+    
+    def subjanalyze(y1):
+        if y1 > 0.5:
+           return 'Opiniated'
+        elif y1 < 0.5:
+            return 'Factual'
+        else:
+            return 'Neutral'
+    
     
     def analyzee(z):
         if z >= 0.5:
@@ -68,6 +81,8 @@ with st.expander('Analyze CSV'):
          df4['Score']=df4["Product_Description"].apply(score)
          df4['Analysis']=df4['Score'].apply(analyze)
          df4['Sentiments']=df4['Score'].apply(analyzee)
+         df4['Subjectivity']=df4["Product_Description"].apply(subj)
+         df4['SubjAnalysis']=df4["Product_Description"].apply(subjanalyze)
          st.write(df4)
          df4['Products'] = df4["Product_Description"].astype(str)   #+"-"+
          st.write(df4.head())
