@@ -171,7 +171,12 @@ with st.expander('Analyze CSV'):
          plt.pie(g6)
          plt.show()
          st.pyplot()
-         
+         g11=df4['SubjAnalysis'].value_counts()
+         st.write(g11)
+         plt.pie(g11)
+         plt.show()
+         st.pyplot()
+   
          header('PRODUCT CROSS SENTIMENT ANALYSIS')
          g7=pd.crosstab(df4.Sentiments,df4.Product_Type)
          st.write(g7)
