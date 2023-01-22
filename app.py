@@ -158,7 +158,7 @@ with st.expander('Analyze CSV'):
                   def forcol(jk):
                    for jk in df4['Product_Description']:
                     return jk
-                    break
+                 
                   df4['SOP1']=df4['Product_Description'].apply(forcol)
                   df4['SOP1']
          g97=df4['Sentiments'].apply(forcsv).astype(str) 
