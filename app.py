@@ -155,8 +155,10 @@ with st.expander('Analyze CSV'):
          st.pyplot()
          def forcsv(lk):
                 if lk == 0:
-                 for lk in df4['Product_Description','Sentiments']:   
-                  df4['SOP1']=df4['Product_Description']
+                  def forcol(jk):
+                   for jk in df4['Product_Description']:
+                    return jk
+                 df4['SOP1']=df4['Product_Description'].apply(forcol)
     
          g97=df4['Sentiments'].apply(forcsv).astype(str) 
          st.write(g97)
