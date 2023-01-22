@@ -159,7 +159,7 @@ with st.expander('Analyze CSV'):
                    for jk in df4['Product_Description']:
                     return jk
                 df4['SOP1']=df4['Product_Description'].apply(forcol)
-    
+                df4['SOP1']
          g97=df4['Sentiments'].apply(forcsv).astype(str) 
          st.write(g97)
          header('PRODUCT CROSS SUBJECTIVITY ANALYSIS')
