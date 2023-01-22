@@ -155,7 +155,9 @@ with st.expander('Analyze CSV'):
          st.pyplot()
          def forcsv(lk):
                 if lk == 0:
-                    return df4['Product_Description']
+                 for lk in df4['Product_Description','Sentiments']:   
+                  df4['SOP1']=df4['Product_Description']
+    
          g97=df4['Sentiments'].apply(forcsv).astype(str) 
          st.write(g97)
          header('PRODUCT CROSS SUBJECTIVITY ANALYSIS')
