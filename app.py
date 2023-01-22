@@ -132,6 +132,38 @@ with st.expander('Analyze CSV'):
          st.write(df4.head(100))
          st.write(df4.tail(10))
          
+         #st.subheader('MAXIMUM VALUES')
+         def header(url):
+          st.markdown(f'<p style="background-color:#000000;color:#0000ff;font-size:24px;border-radius:2%;">{url}</p>', unsafe_allow_html=True)
+         header('MAXIMUM SENTIMENT VALUES')
+         g6=df4['Analysis'].value_counts()
+         st.write(g6)
+         plt.pie(g6)
+         plt.show()
+         st.pyplot()
+         g11=df4['SubjAnalysis'].value_counts()
+         st.write(g11)
+         plt.pie(g11)
+         plt.show()
+         st.pyplot()
+   
+         header('PRODUCT CROSS SENTIMENT ANALYSIS')
+         g7=pd.crosstab(df4.Sentiments,df4.Product_Type)
+         st.write(g7)
+         g7.hist()
+         plt.show()
+         st.pyplot()
+         def forcsv(lk,lj):
+                if lk == 0 and lj == 0:
+                    return df4[columns='Product_Description']
+         g97=df4.loc['Sentiments','Product_Type'].apply(forcsv) 
+        
+         header('PRODUCT CROSS SUBJECTIVITY ANALYSIS')
+         g12=pd.crosstab(df4.SubjAnalysisScore,df4.Product_Type)
+         st.write(g12)
+         g12.hist()
+         plt.show()
+         st.pyplot()
          
          
          @st.cache
