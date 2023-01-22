@@ -156,7 +156,7 @@ with st.expander('Analyze CSV'):
          def forcsv(lk,lj):
                 if lk == 0:
                     return df4['Product_Description']
-         g97=df4['Sentiments'].apply(forcsv) 
+         g97=df4['Sentiments'].apply(forcsv).astype(str) 
          st.write(g97)
          header('PRODUCT CROSS SUBJECTIVITY ANALYSIS')
          g12=pd.crosstab(df4.SubjAnalysisScore,df4.Product_Type)
