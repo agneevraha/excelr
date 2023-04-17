@@ -13,6 +13,8 @@ import numpy as np
 #np.random.randn
 st.title('NLP')
 st.header('Text Analysis: AMAZON REVIEW DATA ')
+st.header('A Helping Aid for Interviewrs/HRs during Recuriting')
+st.header('Interviewee Facebook,LinkedIn,Naukri.com/Resume Subjectivity Tool')
 file='https://github.com/agneevraha/excelr/blob/main/_newfile%20(2).csv?raw=true'
 df=pd.read_csv(file)
 st.subheader('DATA POST EDA')
