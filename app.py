@@ -14,6 +14,10 @@ import numpy as np
 st.title('NLP')
 st.header('Text Analysis: AMAZON REVIEW DATA ')
 st.header('Text Analysis: SALES REVIEW DATA ')
+st.header('Text Analysis: BOOKS REVIEW DATA ')
+st.header('Text Analysis: SONG LYRICS DATA ')
+st.header('Text Analysis: VIDEO CAPTION DATA ')
+st.header('Text Analysis: MOVIE REVIEW DATA ')
 st.header('A Helping Aid for Interviewrs/HRs during Recuriting')
 st.header('Interviewee Facebook,LinkedIn,Naukri.com/Resume Subjectivity Tool')
 file='https://github.com/agneevraha/excelr/blob/main/_newfile%20(2).csv?raw=true'
