@@ -12,8 +12,9 @@ import numpy as np
 #import plotly.graph_objects as go
 #np.random.randn
 st.title('NLP')
-st.title('A 10 in 1 Web App for Formatted and accurated Natural Language Processing Analysis')
+st.title('A 11 in 1 Web App for Formatted and accurated Natural Language Processing Analysis')
 st.header('Text Analysis: AMAZON REVIEW DATA ')
+st.header('Text Analysis: TWITTER REVIEW DATA ')
 st.header('Text Analysis: SALES REVIEW DATA ')
 st.header('Text Analysis: BOOKS REVIEW DATA ')
 st.header('Text Analysis: SONG LYRICS DATA ')
