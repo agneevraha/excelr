@@ -165,7 +165,7 @@ with st.expander('Analyze CSV'):
             st.write(df4['Product_Description'])
          except ValueError as ve:
             st.write('raise')
-            
+           
          header('PRODUCT CROSS SENTIMENT ANALYSIS')
          g7=pd.crosstab(df4.Sentiments,df4.Product_Type)
          st.write(g7)
