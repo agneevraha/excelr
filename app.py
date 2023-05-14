@@ -160,7 +160,7 @@ with st.expander('Analyze CSV'):
          plt.show()
          st.pyplot()
          
-         if  g6 == 'Neutral' and g11 == 'Neutral':
+         if  df4['Analysis'] <= 0.5 and df4['Analysis'] >= -0.5 and df4['SubjAnalysis'] == 0.5:
             st.write(df4['Product_Description'])
          
         
