@@ -160,7 +160,7 @@ with st.expander('Analyze CSV'):
          plt.show()
          st.pyplot()
          
-         if df4['SubjAnalysis']=='Neutral' and df4['Analysis']=='Neutral':
+         if  df4['Analysis']=='Neutral' and df4['SubjAnalysis']=='Neutral':
             st.write(df4['Product_Description'])
          header('PRODUCT CROSS SENTIMENT ANALYSIS')
          g7=pd.crosstab(df4.Sentiments,df4.Product_Type)
