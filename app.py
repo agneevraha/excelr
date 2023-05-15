@@ -166,6 +166,8 @@ with st.expander('Analyze CSV'):
               for y in g11:
                 if x == 'Factual' and y == 'Opiniated':
                    st.write(x/y)
+                break
+              break  
          except ValueError as ve:
             st.write('raise')
            
