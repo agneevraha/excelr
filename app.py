@@ -163,7 +163,9 @@ with st.expander('Analyze CSV'):
          for x in g11:
             st.write(x)
             break
-            st.write(x)
+         
+        for y in g11:
+            st.write(y)
             break
             
          header('PRODUCT CROSS SENTIMENT ANALYSIS')
