@@ -164,7 +164,7 @@ with st.expander('Analyze CSV'):
             st.write(x)
             break
          
-        for y in g11:
+         for y in g11:
             st.write(y)
             break
             
