@@ -177,7 +177,7 @@ with st.expander('Analyze CSV'):
               #  st.write(g57)
                # break
          
-         if x == 'Positive':
+         if df4['Analysis'] == 'Positive':
             for x in df4['Analysis']:
             
                 st.write(df4)
