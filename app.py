@@ -159,12 +159,17 @@ with st.expander('Analyze CSV'):
          plt.pie(g11)
          plt.show()
          st.pyplot()
-            
-         for x in df4['SubjAnalysis']:
-            if x == 'Factual':
-                g57=df4['SubjAnalysis'].value_counts(x)
-                st.write(g57)
+         
+        
+         for x in g11:
+                st.write(x)
                 break
+         #Creates Proportion Statistics
+         #for x in df4['SubjAnalysis']:
+            #if x == 'Factual':
+             #   g57=df4['SubjAnalysis'].value_counts(x)
+              #  st.write(g57)
+               # break
             
          header('PRODUCT CROSS SENTIMENT ANALYSIS')
          g7=pd.crosstab(df4.Sentiments,df4.Product_Type)
