@@ -161,9 +161,14 @@ with st.expander('Analyze CSV'):
          st.pyplot()
          
         
-         for x in g11:
-                st.write(x)
-                break
+        st.header('EMOTION RATING CALCULATOR')
+        val = input("Enter your Factual Score: ")
+        val2 = input("Enter your Opiniated Score: ")
+        val3 = val1/val2
+        st.write(val3 'is the Emotion Score of the Personnel')
+        # for x in g11:
+         #       st.write(x)
+          #      break
          #Creates Proportion Statistics
          #for x in df4['SubjAnalysis']:
             #if x == 'Factual':
