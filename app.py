@@ -161,8 +161,11 @@ with st.expander('Analyze CSV'):
          st.pyplot()
          
          try:
-          if  df4['Score'] == 0 and df4['Subjectivity'] == 0.5:
-            st.write(df4['Product_Description'])
+          #if  df4['Score'] == 0 and df4['Subjectivity'] == 0.5:
+          for x in g11:
+              for y in g11:
+                if x == 'Factual' and y == 'Opiniated':
+                   st.write(x/y)
          except ValueError as ve:
             st.write('raise')
            
