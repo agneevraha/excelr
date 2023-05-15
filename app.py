@@ -162,9 +162,9 @@ with st.expander('Analyze CSV'):
          
         
          header('EMOTION RATING CALCULATOR')
-         val = input("Enter your Factual Score: ")
-         val2 = input("Enter your Opiniated Score: ")
-         val3 = val1/val2
+         user_input = st.number_input("Factual Score")
+         user_input2 = st.number_input("Opiniated Score")
+         val3 = (user_input/user_input2)
          st.write(val3)
          header('is the NLP Ratio of the Personnels FACTUAL TO OPINIONS in any platform')     
          # for x in g11:
