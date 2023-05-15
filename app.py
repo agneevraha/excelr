@@ -176,7 +176,22 @@ with st.expander('Analyze CSV'):
              #   g57=df4['SubjAnalysis'].value_counts(x)
               #  st.write(g57)
                # break
-            
+         
+        for x in df4['Analysis']:
+            if x == 'Positive':
+                st.write(df4)
+                break
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
          header('PRODUCT CROSS SENTIMENT ANALYSIS')
          g7=pd.crosstab(df4.Sentiments,df4.Product_Type)
          st.write(g7)
