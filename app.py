@@ -159,18 +159,11 @@ with st.expander('Analyze CSV'):
          plt.pie(g11)
          plt.show()
          st.pyplot()
-         
-         try:
-          #if  df4['Score'] == 0 and df4['Subjectivity'] == 0.5:
-          for x in g11:
-              for y in g11:
-                if x == 'Factual' and y == 'Opiniated':
-                   st.write(x/y)
-                break
-              break  
-         except ValueError as ve:
-            st.write('raise')
-           
+            
+         for x in g11:
+            st.write(x)
+         break
+            
          header('PRODUCT CROSS SENTIMENT ANALYSIS')
          g7=pd.crosstab(df4.Sentiments,df4.Product_Type)
          st.write(g7)
