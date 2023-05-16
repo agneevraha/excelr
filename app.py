@@ -178,10 +178,6 @@ with st.expander('Analyze CSV'):
                # break
          
          
-         for x in df4['Analysis']:
-            if x == 'Positive':
-                st.write(df4)
-                break
         
         
         
