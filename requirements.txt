@@ -1,7 +1,6 @@
 pandas
 numpy
 regex
-scikit-learn
 sklearn
 nltk
 spacy
